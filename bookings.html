@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reserve a table at Bean & Brew Café for dining or remote work.">
+    <title>Bookings - Bean & Brew Café</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Bean and Brew Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="bookings.html">Bookings</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <h1>Book a Table</h1>
+            <p>Please fill out the form below to secure your spot.</p>
+        </section>
+
+        <div class="booking-container">
+            <form id="cafeBookingForm">
+                <div class="form-group">
+                    <label for="userName">Full Name</label>
+                    <input type="text" id="userName" name="name" required placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="userEmail">Email Address</label>
+                    <input type="email" id="userEmail" name="email" required placeholder="email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="bookingDate">Date</label>
+                    <input type="date" id="bookingDate" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="bookingTime">Time</label>
+                    <input type="time" id="bookingTime" name="time" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="guestCount">Number of Guests</label>
+                    <select id="guestCount" name="guests" required>
+                        <option value="" disabled selected>Select guests</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5+">5+ People</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn">Confirm Booking</button>
+                
+                <div id="formFeedback" style="margin-top: 15px; font-weight: bold; text-align: center;"></div>
+            </form>
+
+            <div class="booking-notes">
+                <h3>Important Information</h3>
+                <ul>
+                    <li>Reservations are held for 15 minutes.</li>
+                    <li>For groups larger than 6, please call us directly.</li>
+                    <li>Free Wi-Fi is available for all remote workers.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <span>Follow us on:</span>
+            <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
+        </div>
+        <div class="contact-info">
+            <p>1234 Coffee Street, City Center | Phone: 07123456789</p>
+            <p>Opening Hours: Mon-Sun, 7:00 AM - 8:00 PM</p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
